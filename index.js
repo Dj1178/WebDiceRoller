@@ -1,5 +1,5 @@
 function createDice(number) {
-    const dotPositionMatrix ={
+    const dotPositionMatrix = {
         1: [
             [50, 50]
         ],
@@ -33,7 +33,7 @@ function createDice(number) {
             [80, 20],
             [80, 80]
         ]
-    }
+    };
     const dice = document.createElement("div");
     dice.classList.add("dice");
     for (const dotPosition of dotPositionMatrix[number]){
@@ -45,6 +45,7 @@ function createDice(number) {
     }
     return dice;
 }
+
 function randomizeDice(diceContainer, numberOfDice){
     diceContainer.innerHTML= "";
     for (let i=0;i<numberOfDice;i++){
