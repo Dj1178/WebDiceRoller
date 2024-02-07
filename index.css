@@ -2,7 +2,7 @@
     display: flex;
 }
 body{
-    background-color:#225551;
+    background-color:#9d9d9d;
 }
 
 .dice{
@@ -25,7 +25,7 @@ body{
     position: absolute;
     top: var(--top);
     left: var(--left);
-    transform:translateX(calc(var(--left)) * -1) translateY(calc(var(--top)) * -1);
+    transform: translateX(calc(var(--left)) * -1) translateY(calc(var(--top)) * -1);
 }
 
 .btn-roll-dice {
