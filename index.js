@@ -58,12 +58,11 @@ const NUMBER_OF_DICE = 4;
 const diceContainer = document.querySelector(".dice-container");
 const btnRollDice = document.querySelector(".btn-roll-dice");
 
-btnRollDice.addEventListener("load", () => {
-    const interval = setInterval(() => {
-        randomizeDice(diceContainer, NUMBER_OF_DICE);
-    }, 50);
-    setTimeout(() => clearInterval(interval), 1000);
-});
+const interval = setInterval(() => {
+    randomizeDice(diceContainer, NUMBER_OF_DICE);
+}, 50);
+setTimeout(() => clearInterval(interval), 1000);
+
 btnRollDice.addEventListener("click", () => {
     const interval = setInterval(() => {
         randomizeDice(diceContainer, NUMBER_OF_DICE);

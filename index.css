@@ -1,6 +1,9 @@
 .dice-container {
     display: flex;
 }
+body{
+    background-color:#225551;
+}
 
 .dice{
     width: 80px;
